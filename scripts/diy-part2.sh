@@ -87,7 +87,7 @@ popd
 
 mkdir Modem-Support
 pushd Modem-Support
-git clone --depth=1 https://github.com/Siriling/5G-Modem-Support .
+git clone --depth=1 https://github.com/ZJJCKA/5G-Modem-Support .
 popd
 
 mkdir MyConfig
@@ -112,33 +112,33 @@ pushd package/community
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fileassistant
 #Guest-wifi
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-guest-wifi
-mkdir luci-app-guest-wifi
-cp -rf ../../kiddin9/luci-app-guest-wifi/* luci-app-guest-wifi
+#mkdir luci-app-guest-wifi
+#cp -rf ../../kiddin9/luci-app-guest-wifi/* luci-app-guest-wifi
 #Onliner
-mkdir luci-app-onliner
-cp -rf ../../kiddin9/luci-app-onliner/* luci-app-onliner
+#mkdir luci-app-onliner
+#cp -rf ../../kiddin9/luci-app-onliner/* luci-app-onliner
 #Eqos（iStoreOS已有）
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos
 #Wolplus（已有Wol）
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-wolplus
 #WiFischedule
-mkdir luci-app-wifischedule
-cp -rf ../../kiddin9/luci-app-wifischedule/* luci-app-wifischedule
+#mkdir luci-app-wifischedule
+#cp -rf ../../kiddin9/luci-app-wifischedule/* luci-app-wifischedule
 #RAMfree
-mkdir luci-app-ramfree
-cp -rf ../../kiddin9/luci-app-ramfree/* luci-app-ramfree
+#mkdir luci-app-ramfree
+#cp -rf ../../kiddin9/luci-app-ramfree/* luci-app-ramfree
 #ttyd（conf已有）
 # mkdir luci-app-ttyd
 # cp -rf ../kiddin9/luci-app-ttyd/* luci-app-ttyd
 #usb3disable（禁用USB3.0接口）
-mkdir luci-app-usb3disable
-cp -rf ../../kiddin9/luci-app-usb3disable/* luci-app-usb3disable
+#mkdir luci-app-usb3disable
+#cp -rf ../../kiddin9/luci-app-usb3disable/* luci-app-usb3disable
 #NetData（系统监控）
 mkdir luci-app-netdata
 cp -rf ../../kiddin9/luci-app-netdata/* luci-app-netdata
 #rtbwmon（实施流量）
-mkdir luci-app-rtbwmon
-cp -rf ../../kiddin9/luci-app-rtbwmon/* luci-app-rtbwmon
+#mkdir luci-app-rtbwmon
+#cp -rf ../../kiddin9/luci-app-rtbwmon/* luci-app-rtbwmon
 
 # 存储相关应用
 # Gowebdav（iStoreOS已有）
@@ -195,10 +195,10 @@ fi
 #ADGuardHome（kiddin9）
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome
-mkdir luci-app-adguardhome
-cp -rf ../../kiddin9/luci-app-adguardhome/* luci-app-adguardhome
-cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-adguardhome/* luci-app-adguardhome
-sed -i 's/拦截DNS服务器/拦截DNS服务器（默认用户名和密码均为root）/' luci-app-adguardhome/po/zh_Hans/adguardhome.po
+#mkdir luci-app-adguardhome
+#cp -rf ../../kiddin9/luci-app-adguardhome/* luci-app-adguardhome
+#cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-adguardhome/* luci-app-adguardhome
+#sed -i 's/拦截DNS服务器/拦截DNS服务器（默认用户名和密码均为root）/' luci-app-adguardhome/po/zh_Hans/adguardhome.po
 #sed -i 's/+PACKAGE_$(PKG_NAME)_INCLUDE_binary:adguardhome//' luci-app-adguardhome/Makefile
 #ADGuardHome（kenzok8）
 # svn export https://github.com/kenzok8/openwrt-packages/trunk/adguardhome
@@ -243,9 +243,9 @@ sed -i 's/拦截DNS服务器/拦截DNS服务器（默认用户名和密码均为
 #Unblockneteasemusic
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockneteasemusic
-mkdir UnblockNeteaseMusic
+#mkdir UnblockNeteaseMusic
 mkdir luci-app-unblockneteasemusic
-cp -rf ../../kiddin9/UnblockNeteaseMusic/* UnblockNeteaseMusic
+#cp -rf ../../kiddin9/UnblockNeteaseMusic/* UnblockNeteaseMusic
 cp -rf ../../kiddin9/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
 #OpenAppFilter（conf已有）
 # svn export https://github.com/destan19/OpenAppFilter/trunk OpenAppFilter
@@ -294,24 +294,24 @@ popd
 # 添加第三方应用
 echo "
 # 系统相关应用
-CONFIG_PACKAGE_luci-app-poweroff=y
+#CONFIG_PACKAGE_luci-app-poweroff=y
 CONFIG_PACKAGE_luci-app-fileassistant=y
-CONFIG_PACKAGE_luci-app-guest-wifi=y
-CONFIG_PACKAGE_luci-app-onliner=y
-CONFIG_PACKAGE_luci-app-eqos=y
+#CONFIG_PACKAGE_luci-app-guest-wifi=y
+#CONFIG_PACKAGE_luci-app-onliner=y
+#CONFIG_PACKAGE_luci-app-eqos=y
 # CONFIG_PACKAGE_luci-app-wolplus=y
-CONFIG_PACKAGE_luci-app-wifischedule=y
-CONFIG_PACKAGE_luci-app-ramfree=y
+#CONFIG_PACKAGE_luci-app-wifischedule=y
+#CONFIG_PACKAGE_luci-app-ramfree=y
 # CONFIG_PACKAGE_luci-app-usb3disable=y
 CONFIG_PACKAGE_luci-app-luci-app-netdata=y
-CONFIG_PACKAGE_luci-app-luci-app-rtbwmon=y
+#CONFIG_PACKAGE_luci-app-luci-app-rtbwmon=y
 
 # 存储相关应用
-# CONFIG_PACKAGE_luci-app-gowebdav=y
+CONFIG_PACKAGE_luci-app-samba4=y
 
 # 科学上网和代理应用
 #SSR
-CONFIG_PACKAGE_luci-app-ssr-plus=y
+# CONFIG_PACKAGE_luci-app-ssr-plus=y
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Client=y
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client is not set
@@ -338,30 +338,30 @@ CONFIG_PACKAGE_luci-app-ssr-plus=y
 
 #Passwall和Passwall2
 # CONFIG_PACKAGE_luci-app-passwall2=y
-# CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-passwall=y
 # CONFIG_PACKAGE_luci-app-passwall_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_IPv6_Nat=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Kcptun=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
+#CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin=y
-# CONFIG_PACKAGE_luci-app-haproxy-tcp=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin=y
+CONFIG_PACKAGE_luci-app-haproxy-tcp=y
 
 #VSSR（HelloWord）
 # CONFIG_PACKAGE_luci-app-vssr=y
@@ -375,7 +375,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-openclash=y
 
 # 去广告应用
-CONFIG_PACKAGE_luci-app-adguardhome=y
+# CONFIG_PACKAGE_luci-app-adguardhome=y
 # CONFIG_PACKAGE_luci-app-dnsfilter=y
 # CONFIG_PACKAGE_luci-app-ikoolproxy=y
 
