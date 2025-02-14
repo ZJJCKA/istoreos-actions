@@ -87,7 +87,7 @@ popd
 
 mkdir Modem-Support
 pushd Modem-Support
-git clone --depth=1 https://github.com/ZJJCKA/5G-Modem-Support .
+git clone --depth=1 https://github.com/Siriling/5G-Modem-Support .
 popd
 
 mkdir MyConfig
