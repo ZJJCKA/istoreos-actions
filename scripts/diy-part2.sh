@@ -85,8 +85,8 @@ pushd kiddin9
 git clone --depth=1 https://github.com/kiddin9/kwrt-packages .
 popd
 
-mkdir Modem-Support
-pushd Modem-Support
+mkdir maomao0
+pushd maomao0
 git clone --depth=1 https://github.com/ZJJCKA/maomao0 .
 popd
 
@@ -251,18 +251,18 @@ cp -rf ../../kiddin9/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
 # svn export https://github.com/destan19/OpenAppFilter/trunk OpenAppFilter
 
 # 5G通信模组拨号工具
-# svn export https://github.com/Siriling/5G-Modem-Support/trunk/quectel_QMI_WWAN
-# svn export https://github.com/Siriling/5G-Modem-Support/trunk/quectel_cm_5G
+# svn export https://github.com/Siriling/5G-maomao0/trunk/quectel_QMI_WWAN
+# svn export https://github.com/Siriling/5G-maomao0/trunk/quectel_cm_5G
 # svn export https://github.com/xiaoxifu64/immortalwrt/trunk/package/quectel_MHI
-# svn export https://github.com/Siriling/5G-Modem-Support/trunk/luci-app-hypermodem
+# svn export https://github.com/Siriling/5G-maomao0/trunk/luci-app-hypermodem
 mkdir quectel_QMI_WWAN
 mkdir quectel_cm_5G
 mkdir quectel_MHI
 mkdir luci-app-hypermodem
-cp -rf ../../Modem-Support/quectel_QMI_WWAN/* quectel_QMI_WWAN
-cp -rf ../../Modem-Support/quectel_cm_5G/* quectel_cm_5G
-cp -rf ../../Modem-Support/quectel_MHI/* quectel_MHI
-cp -rf ../../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
+cp -rf ../../maomao0/quectel_QMI_WWAN/* quectel_QMI_WWAN
+cp -rf ../../maomao0/quectel_cm_5G/* quectel_cm_5G
+cp -rf ../../maomao0/quectel_MHI/* quectel_MHI
+cp -rf ../../maomao0/luci-app-hypermodem/* luci-app-hypermodem
 
 # 5G模组短信插件
 # svn export https://github.com/dwj0/luci-app-sms-tool/trunk/sms-tool
@@ -271,8 +271,8 @@ cp -rf ../../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
 # cp -rf temp/luci-app-sms-tool/* luci-app-sms-tool
 mkdir sms-tool
 mkdir luci-app-sms-tool
-cp -rf ../../Modem-Support/sms-tool/* sms-tool
-cp -rf ../../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ../../maomao0/sms-tool/* sms-tool
+cp -rf ../../maomao0/luci-app-sms-tool/* luci-app-sms-tool
 cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
 
 # 5G模组信息插件
@@ -282,8 +282,8 @@ cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* 
 
 # 5G模组信息插件+AT工具
 mkdir luci-app-modem
-cp -rf ../../Modem-Support/luci-app-modem/* luci-app-modem
-rm -rf ../../Modem-Support/luci-app-modem/po/zh_Hans #解决汉化问题
+cp -rf ../../maomao0/luci-app-modem/* luci-app-modem
+rm -rf ../../maomao0/luci-app-modem/po/zh_Hans #解决汉化问题
 popd
 
 # 5G模组拨号脚本
